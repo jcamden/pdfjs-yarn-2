@@ -1,0 +1,30 @@
+// Yarn 2 settings
+{
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  // personal settings
+  "editor.fontFamily": "Jetbrains Mono Variable",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "files.autoSave": "onFocusChange",
+  // needed in order to load Yarn 2 SDK's pnpified Prettier path (above)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  // not sure if this is working...
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.packageManager": "yarn",
+  "sort-imports.default-sort-style": "module",
+  "sort-imports.languages": ["javascript", "typescript"],
+  "window.zoomLevel": -1,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}

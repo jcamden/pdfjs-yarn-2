@@ -1,0 +1,22 @@
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+# (I have swapped the comments. Not using zero-installs for now.)
+# !/.yarn/cache
+/.pnp.*
+
+node_modules
+
+coverage
+
+dist
+
+id_rsa_priv.pem
+
+videos
+
+packages/server/resources
