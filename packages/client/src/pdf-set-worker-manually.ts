@@ -1,4 +1,6 @@
-const pdfjs = require('pdfjs-dist');
+import pdfjsModule from 'pdfjs-dist';
+type Pdfjs = typeof pdfjsModule;
+const pdfjs = require('pdfjs-dist') as Pdfjs;
 
 // This is actually not working for Webpack.
 const pdfjsWorker = require('pdfjs-dist/build/pdf.worker.entry');
@@ -10,7 +12,7 @@ export const pdfSetWorkerManually = async (src: string) => {
   // var defined through a Django template tag
   const loadingTask = pdfjs.getDocument(src);
 
-  const loadedPdf = await loadingTask.promise.then((pdf: any) => {
+  const loadedPdf = await loadingTask.promise.then((pdf) => {
     return pdf;
   });
 

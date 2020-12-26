@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "path-browserify": "^1.0.1",
-    "pdfjs-dist": "^2.5.207",
+    "pdfjs-dist": "^2.6.347",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "worker-loader": "^2.0.0"
