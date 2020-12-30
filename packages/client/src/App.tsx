@@ -1,11 +1,11 @@
 import React from 'react';
 
 import Pdf from './Pdf';
-import { pdfSetWorkerManually } from './pdf-set-worker-manually';
+// import { pdfSetWorkerManually } from './pdf-set-worker-manually';
 import { pdfWebpackEntry } from './pdf-webpack-entry';
 
-pdfSetWorkerManually('./dummy.pdf');
-// pdfWebpackEntry('./dummy.pdf');
+// pdfSetWorkerManually('./dummy.pdf');
+pdfWebpackEntry('./dummy.pdf');
 
 export const App: React.FC = () => {
   return (
