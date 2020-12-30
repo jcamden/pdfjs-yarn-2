@@ -1,10 +1,10 @@
-import pdfjsLib from 'pdfjs-dist/webpack';
+import { getDocument } from 'pdfjs-dist/webpack';
 
 export const pdfWebpackEntry = async (src: string) => {
-  // pdfjsLib.GlobalWorkerOptions.workerSrc = 'index.worker.js';
+  // pdfjsLib.GlobalWorkerOptions.workerSrc = 'pdf.worker.worker.js';
 
   // var defined through a Django template tag
-  const loadingTask = pdfjsLib.getDocument(src);
+  const loadingTask = getDocument(src);
 
   const loadedPdf = await loadingTask.promise.then((pdf) => {
     return pdf;

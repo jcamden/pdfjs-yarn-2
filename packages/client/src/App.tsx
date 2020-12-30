@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Pdf from './Pdf';
+// import Pdf from './Pdf';
 // import { pdfSetWorkerManually } from './pdf-set-worker-manually';
 import { pdfWebpackEntry } from './pdf-webpack-entry';
 
